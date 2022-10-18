@@ -1,6 +1,9 @@
-import pytest
 from otter.api import grade_submission
+import pytest
+
 grade = grade_submission("demo.ipynb", "autograder.zip")
-def test_hola():
-    assert grade.get_score('q_1') == 1
+
+
+def test_function():
+    assert grade.get_score("q_1") == 1
 
